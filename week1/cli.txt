@@ -1,6 +1,6 @@
 1-a) How do I create a hidden file or folder? (for Windows/PowerShell)
 
-    -Type the following command to hide a folder or file and press Enter:
+    -Type the following command to hide a folder or file:
 
     attrib +h "Secret Files"
 
