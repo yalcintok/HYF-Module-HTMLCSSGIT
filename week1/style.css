@@ -17,10 +17,10 @@ h1 {
   position: absolute;
   text-align: center;
   color: brown;
-  top: 10%;
+  top: 0%;
   width: 100%;
-  font-family: fantasy;
-  font-size: 48px;
+  font-family: 'Satisfy', cursive;
+  font-size: 38px;
 }
 .business-photo {
   opacity: 0.65;
