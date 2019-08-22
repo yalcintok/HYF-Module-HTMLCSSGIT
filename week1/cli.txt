@@ -1,0 +1,32 @@
+1-a) How do I create a hidden file or folder? (for Windows/PowerShell)
+
+    -Type the following command to hide a folder or file and press Enter:
+
+    attrib +h "Secret Files"
+
+    In the command replace "Secret Files" with the name of your folder or file. 
+    Quotation marks are only necessary when there are spaces in the name.
+
+    -If you're trying to hide a folder with files and subfolders, which you also want to keep hidden, 
+    then you'll need to use these steps as well.
+
+    While in Command Prompt type the following command to navigate inside the hidden folder and press Enter:
+
+    cd "Secret Files"
+
+    In the command replace "Secret Files" with the name of your hidden folder.
+
+    Type the following command to hide all files and folders inside the hidden folder and press Enter:
+
+    attrib +h /s /d
+
+
+1-b) How do I display it in the CLI?
+    Use the Force parameter: 
+    dir -Force
+ 
+ 
+ 
+2) How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+   Your command should be: 
+   mkdir -p x/y/z
