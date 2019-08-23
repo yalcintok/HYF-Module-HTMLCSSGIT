@@ -30,3 +30,14 @@
 2) How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
    Your command should be: 
    mkdir -p x/y/z 
+
+3) How do I append a message to a file, without a newline character, so the output would be:
+    first message
+    second message
+    
+    echo "your message" >> "your file name"
+    
+    e.g. 
+    echo "Namaste Hola Merhaba" >> .\greetings.txt
+    
+    if you add just one more than so you remove all message within the file and just put there the last command message. 
