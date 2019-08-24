@@ -35,9 +35,9 @@
     first message
     second message
     
-    echo "your message" >> "your file name"
+    You should append your message with quotation marks, so that your messsage display without new line character. Your first message 
+    should be like this:
+    echo "first message" > "your file name" (with only one more than mark)
+    echo "second message" >> "your file name" (now with two more than marks)
     
-    e.g. 
-    echo "Namaste Hola Merhaba" >> .\greetings.txt
     
-    if you add just one more than so you remove all message within the file and just put there the last command message. 
