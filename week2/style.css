@@ -123,7 +123,7 @@ img {
     #grid-floats .grid-item {
     margin: 10px;
     width:calc(44% - 15px);
-    height:450px;
+    height:500px;
   }
   #grid-floats .grid-item:nth-child(1){
     width:calc(90% - 15px);
@@ -131,7 +131,7 @@ img {
   #grid-flex .grid-item {
     margin: 10px;
     width:calc(44% - 15px);
-    height: 450px;
+    height: 500px;
   }
   #grid-flex .grid-item:nth-child(1){
     width:calc(90% - 15px);
