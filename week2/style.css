@@ -120,16 +120,16 @@ img {
 }
 @media (max-width: 600px){
     #grid-floats .grid-item {
-    margin: 10px;
-    width:calc(44% - 5px);
+    margin: 5px;
+    width:calc(45% - 5px);
     height:500px;
   }
   #grid-floats .grid-item:nth-child(1){
     width:calc(91% - 5px);
   }
   #grid-flex .grid-item {
-    margin: 10px;
-    width:calc(44% - 5px);
+    margin: 5px;
+    width:calc(45% - 5px);
     height: 500px;
   }
   #grid-flex .grid-item:nth-child(1){
@@ -143,9 +143,12 @@ img {
     color: black;
     text-align: left;
     hyphens: auto;
-    font-size: 0.9em;
+    font-size: 0.6em;
   }
   h2 {
     font-size: 2em;
+  }
+  h3{
+    font-size: 0.9em;
   }
 }
