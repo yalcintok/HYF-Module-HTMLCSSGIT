@@ -35,7 +35,6 @@ h2 {
   background-image: url(images/bgimage2.jpg); 
   background-size: cover; 
   background-attachment: fixed;
-
 }
   #grid-floats .grid-item {
   float: left;
@@ -122,24 +121,31 @@ img {
 @media (max-width: 600px){
     #grid-floats .grid-item {
     margin: 10px;
-    width:calc(44% - 15px);
+    width:calc(44% - 5px);
     height:500px;
   }
   #grid-floats .grid-item:nth-child(1){
-    width:calc(90% - 15px);
+    width:calc(91% - 5px);
   }
   #grid-flex .grid-item {
     margin: 10px;
-    width:calc(44% - 15px);
+    width:calc(44% - 5px);
     height: 500px;
   }
   #grid-flex .grid-item:nth-child(1){
-    width:calc(90% - 15px);
+    width:calc(91% - 5px);
   }
   img {
     left:20px;
   }
   p{
-  padding: 5px;
-  color: black;
+    padding: 10px;
+    color: black;
+    text-align: left;
+    hyphens: auto;
+    font-size: 0.9em;
+  }
+  h2 {
+    font-size: 2em;
+  }
 }
