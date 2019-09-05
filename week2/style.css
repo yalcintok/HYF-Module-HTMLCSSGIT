@@ -5,7 +5,6 @@
 }
 body{
   font-family: 'Hepta Slab', serif;
-  
 }
 header{
   background-image: url(images/bgimage.jpg);
@@ -41,7 +40,7 @@ h2 {
   border: 3px solid;
   margin: 15px;
   width:calc(23% - 10px);
-  height:450px;
+  height:470px;
   border-radius: 3%;
   position: relative;
   box-sizing: border-box;
@@ -51,12 +50,14 @@ h2 {
 #grid-floats .grid-item:nth-child(1){
   width:calc(48% - 15px);
 }
+
 #grid-floats .grid-item:hover{
   background-color: #ffd692;
   color: red;
 }
 li {
   list-style-type: none;
+  /* display: list-item; */
 }
 h3 {
   padding: 10px;
@@ -64,10 +65,12 @@ h3 {
   text-align: center;
 }
 p{
+  display: block;
   padding: 10px;
   color: black;
   text-align: justify;
   font: bold;
+  margin-top: -10px;
 }
 img {
   width: 70%;
@@ -96,26 +99,28 @@ img {
   background-color: #ffd692;
   color: orangered;
 }
-@media (min-width:600px) and (max-width:1024px){
+@media (min-width:600px) and (max-width:1023px){
   #grid-floats .grid-item {
-    margin: 30px;
-    width:calc(25% - 5px);
+    margin: 20px;
+    width:calc(27% - 5px);
     height:450px;
-    
   }
   #grid-floats .grid-item:nth-child(1){
-    width:calc(57% - 5px);
+    width:calc(60% - 5px);
   }
   #grid-flex .grid-item {
-    margin: 30px;
-    width:calc(25% - 5px);
+    margin: 20px;
+    width:calc(27% - 5px);
     height: 450px;
   }
   #grid-flex .grid-item:nth-child(1){
-    width:calc(57% - 5px);
+    width:calc(60% - 5px);
   }
   img {
     left:20px;
+  }
+  p{
+    font-size: 0.8em;
   }
 }
 @media (max-width: 600px){
@@ -143,7 +148,7 @@ img {
     color: black;
     text-align: left;
     hyphens: auto;
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   h2 {
     font-size: 2em;
