@@ -24,6 +24,7 @@ header{
     position: relative;
     height: 60px;
     margin-bottom: 350px;
+    /* min-width: 1200px; */
 }
 .main .navbar {
     float: right;
@@ -46,7 +47,9 @@ header{
     top: 185px;
     z-index: 0;
 }
-
+picture{
+    background-size: cover;
+}
 #search .button {
     position: absolute;
     z-index: 2;
@@ -136,15 +139,28 @@ header{
 .middle {
     display: flex;
     background-color: #F3F3F3;
+    width: 100%;
+    
+}
+.flexdiv{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 40px;
 }
 .flexlist {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+    
 }
 .flexitem {
     display: block;
-    width: 25%;
+    width: calc(21%);
+    margin: 20px;
+    margin-bottom: -20px;
 }
 .flexitem a{
     text-decoration: none;  
@@ -155,21 +171,24 @@ h3:hover{
 .flexitem h3{
    color:  #01689B;
    font-size: 1.50rem;
+   font-weight: 700;
+   line-height: 1.5rem;
 }
 .line {
     color: black;
     font-size: 1.25rem;
+    line-height: 1.50rem;
 }
 .middle2 {
-    display: flex;
+    /* display: flex;
+    flex-flow: row wrap; */
     background-color: white;
     width: 100%;
 }
-picture{
-    background-size: cover;
-}
+
 .imagesniews {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 70px;
@@ -179,11 +198,12 @@ picture{
 .fotoniews {
     display: block;
     padding: 15px;
-    
+    width: 30%;
 }
 .fotoniews img {
-    width: 370px;
+    /* width: 370px; */
     background-size: cover;
+    width: 100%;
 }
 .fotoniews a{
     text-decoration: none;
@@ -206,10 +226,12 @@ picture{
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 40px;
+    
 }
 .niews2 {
     display:block;
     margin-left: 25px;
+    width: 25%;
 }
 .middle3 h1{
     margin-left: 65px;
@@ -241,6 +263,7 @@ picture{
     background-color: white;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     /* margin-bottom: 40px; */
     margin-top: -20px;
     padding-top: 40px;
@@ -317,6 +340,7 @@ picture{
 .wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .column {
@@ -361,6 +385,64 @@ picture{
     font-size: 18px;
 }
 
-@media (max-width:479px) {
-    
+@media screen and (min-width:768px) and (max-width:991px){
+    .flexitem{
+        width: 45%;
+        margin-bottom: -40px;
+    }
+    .flexdiv{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .flexlist {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flexitem h3{
+       color:  #01689B;
+       font-size: 1.5rem;
+       font-weight: 700;
+       line-height: 1.5rem;
+    }
+    .line {
+        color: black;
+        font-size: 1rem;
+        line-height: 1.50rem;
+    }
+    .middle3{
+        background-color: white;
+        margin-top: 0px;
+        border-top: 1px solid rgb(185, 184, 184);
+    }
+    .flex3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+    .niews2 {
+        display:block;
+        margin-left: 25px;
+        width: 45%;
+    }
+    .middle3 h1{
+        margin-left: 65px;
+        font-size: 1.50rem;
+        font-weight: bold;
+        
+    }
+    .niews2 a{
+        text-decoration: none;
+        line-height: 1.5rem;
+    }
+    .niews2 a h3 {
+        color:  #01689B;
+        font-size: 1.50rem;
+    }
+    .niews2 a p {
+        color: black;
+        font-size: 1rem;
+    }
 }
