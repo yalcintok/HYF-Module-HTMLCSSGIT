@@ -145,8 +145,8 @@ picture{
 .flexdiv{
     max-width: 1200px;
     width: 100%;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: -20px;
+    margin-right: 20px;
     margin-bottom: 40px;
 }
 .flexlist {
@@ -158,7 +158,7 @@ picture{
 }
 .flexitem {
     display: block;
-    width: calc(21%);
+    width: calc(20%);
     margin: 20px;
     margin-bottom: -20px;
 }
@@ -231,7 +231,7 @@ h3:hover{
 .niews2 {
     display:block;
     margin-left: 25px;
-    width: 25%;
+    width: 30%;
 }
 .middle3 h1{
     margin-left: 65px;
@@ -272,7 +272,7 @@ h3:hover{
 .boxes {
     display: block;
     border: 2px solid gray;
-    width: 300px;
+    width: 30%;
     height: 177px;
     text-align: center;
     margin: 30 30 0 65;
@@ -326,17 +326,9 @@ h3:hover{
 #footer {
     background-color: #01689B;
     color: white;
-    padding:40 40 40 40;
+    /* padding:40 40 40 40; */
 }
-.last {
-    background-color: white;
-    margin-top: -15px;
-    padding-bottom: 10px;
-}
-.languages {  
-    width: 100%;
-    text-align: center;
-}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -345,6 +337,7 @@ h3:hover{
 }
 .column {
     display: block;
+    /* width: 30%; */
         
 }
 .column a {
@@ -359,14 +352,24 @@ h3:hover{
     font-size: 31.5px;
     font-weight: 400;
     font-style: italic;
-    
+    width: 43%;
 }
 .column h2{
     font-size: 27px;
+    text-align: end;
+}
+.last {
+    background-color: white;
+    margin-top: -15px;
+    padding-bottom: 10px;
+}
+.languages {  
+    width: 100%;
+    text-align: center;
 }
 .lang li {
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
     border: 1px solid rgb(0, 123, 199);
     padding: 8px;
     
@@ -384,21 +387,87 @@ h3:hover{
     font-weight: 700;
     font-size: 18px;
 }
-
-@media screen and (min-width:768px) and (max-width:991px){
+@media (max-width:479px){
+    .middle{
+        width: 100%;
+    }
     .flexitem{
-        width: 45%;
-        margin-bottom: -40px;
+        width: calc(91%);
+        /* margin-bottom: -80px; */
+        margin: -10px;
+        line-height: 1rem;
     }
     .flexdiv{
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -100px;
+        margin-bottom: 0px;
+    }
+    .imagesniews {
+        margin-top: 70px;
+        margin-left: 0px;
+    }
+    .fotoniews {
+        width: 96%;
+    }
+    .middle3{
+        margin-top: 0px;
+    }    
+    .niews2 {
+        display:block;
+        width: 96%;
+        margin-left: -15px;
+    }
+    .middle3 h1{
+        margin-left: 25px;
+    }
+    .meernieuws h3 {
+        margin-left: 25px;
+    }
+    .middle4 {
+        margin-left: -35px;
+        }
+    .boxes {
+        width: 96%;
+        border: 3px solid gray;
+        }
+    .column a {
+        font-size: 10px;
+        }
+    .column li {
+        list-style-type: none;
+        }
+    .sentence {
+        font-size: 20px;
+        font-weight: 400;
+        font-style: italic;
+        width: 38%;    
+        }
+    .column h2{
+        font-size: 18px;
+        text-align: end;
+        }
+  
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .middle{
+        width: 100%;
+    }
+    .flexitem{
+        width: calc(90%);
+        margin-bottom: -40px;
+        margin: 5px;
+        line-height: 1rem;
+    }
+    .flexdiv{
+        margin-left: 0px;
+        margin-right: -100px;
+        margin-bottom: 0px;
     }
     .flexlist {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
     }
     .flexitem h3{
        color:  #01689B;
@@ -410,6 +479,181 @@ h3:hover{
         color: black;
         font-size: 1rem;
         line-height: 1.50rem;
+    }
+    .imagesniews {
+        margin-left: 10px;
+    }
+    .fotoniews a h3{
+        font-size: 1.60rem;
+    }
+    .fotoniews {
+        display: block;
+        padding: 15px;
+        width: 45%;
+        line-height: normal
+    }
+    .fotoniews img {
+        /* width: 370px; */
+        background-size: cover;
+        width: 100%;
+    }
+    .fotoniews a p {
+        font-size: 1rem;
+    }
+    .middle3{
+        background-color: white;
+        margin-top: 0px;
+        border-top: 1px solid rgb(185, 184, 184);
+    }
+    .flex3{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* margin-left: 40px; */
+    }
+    
+    .niews2 {
+        display:block;
+        width: 41%;
+    }
+    
+    .middle3 h1{
+        /* margin-left: 65px; */
+        font-size: 1.50rem;
+        font-weight: bold;
+        
+    }
+    .niews2 a{
+        line-height: 1.5rem;
+    }
+    .niews2 a h3 {
+        font-size: 1.50rem;
+    }
+    .niews2 a p {
+        font-size: 1rem;
+    }
+    .middle4 {
+        margin-top: -20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+    .boxes {
+        width: 45%;
+        height: 177px;
+        text-align: center;
+        margin: 10 10 0 10;
+        }
+    .first {
+        line-height: 34.125px;
+        word-spacing:0px;
+        color: #1B5E84;
+        font-size: 40px;
+        font-weight: 700;
+        }
+    .bel-info {
+        font-size: 33px;
+        font-weight: 100;
+        }
+    .second {
+        line-height: 34.125px;
+        word-spacing:0px;
+        font-weight:700;
+        text-indent:0px;
+        font-size: 25px;
+        }
+    .purple {
+        font-size: 30px;  
+        }
+    .meld {
+        font-weight: 200;
+        }
+    .column a {
+            font-size: 14px;
+        }
+    .column li {
+            list-style-type: none;
+        }
+    .sentence {
+            font-size: 31.5px;
+            font-weight: 400;
+            font-style: italic;
+            
+        }
+    .column h2{
+            font-size: 27px;
+            text-align: end;
+        }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .middle{
+        width: 100%;
+    }
+    .flexitem{
+        width: calc(48%);
+        margin-bottom: -40px;
+        margin: 5px;
+        line-height: 1rem;
+    }
+    .flexdiv{
+        margin-left: 0px;
+        margin-right: -100px;
+        margin-bottom: 0px;
+        
+    }
+    .flexlist {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .flexitem h3{
+       color:  #01689B;
+       font-size: 1.5rem;
+       font-weight: 700;
+       line-height: 1.5rem;
+    }
+    .line {
+        color: black;
+        font-size: 1rem;
+        line-height: 1.50rem;
+    }
+    .middle2 {
+        width: 100%;
+    }
+    
+    .imagesniews {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 70px;
+        margin-left: 60px;
+        border-top: 1px solid rgb(185, 184, 184);
+    }
+    .imagesniews .fotoniews:nth-child(3){
+        justify-content: left;
+    }
+    .fotoniews {
+        display: block;
+        padding: 15px;
+        width: 50%;
+        line-height: normal
+    }
+    .fotoniews img {
+        /* width: 370px; */
+        background-size: cover;
+        width: 100%;
+    }
+    .fotoniews a{
+        text-decoration: none;
+    }
+    .fotoniews a h3{
+        color: #76768C;
+        font-size: 1.75rem;
+    }
+    .fotoniews a p {
+        font-size: 1rem;
+        color: black;
     }
     .middle3{
         background-color: white;
@@ -444,5 +688,103 @@ h3:hover{
     .niews2 a p {
         color: black;
         font-size: 1rem;
+    }
+    
+    .middle4 {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-bottom: 40px; */
+    margin-top: -20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    .boxes {
+    display: block;
+    border: 2px solid gray;
+    width: 45%;
+    height: 177px;
+    text-align: center;
+    margin: 10 10 0 10;
+    }
+    .first {
+    line-height: 34.125px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    color: #1B5E84;
+    font-size: 40px;
+    font-weight: 700;
+    }
+    .vraag {
+    color: #1B5E84;
+    }
+    .cijfer {
+    color: #1B5E84;
+    }
+    .bel-info {
+    color: black;
+    font-size: 33px;
+    font-weight: 100;
+    }
+    .second {
+    line-height: 34.125px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+    font-weight:700;
+    font-style:normal;
+    font-variant:normal;
+    text-transform:none;
+    text-indent:0px;
+    font-size: 25px;
+    color: black;
+    }
+    .first a, .second a {
+    text-decoration: none;
+    }
+    .purple {
+    color: #A90061;
+    font-size: 35px;  
+    }
+    .meld {
+    color: black;
+    font-weight: 200;
+    }
+    #footer {
+        background-color: #01689B;
+        color: white;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .column {
+        display: block;
+            
+    }
+    .column a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .column li {
+        list-style-type: none;
+    }
+    .sentence {
+        font-size: 31.5px;
+        font-weight: 400;
+        font-style: italic;
+        
+    }
+    .column h2{
+        font-size: 27px;
+        text-align: end;
+    }
+    .lang li a {
+        margin: 5px 10px 5px 0;
     }
 }
