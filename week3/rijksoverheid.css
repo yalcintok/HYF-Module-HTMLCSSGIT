@@ -12,7 +12,76 @@ body{
     margin: 0;
     padding: 0;
 }
+.home-label {
+    position: absolute;
+    top: 1;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
 
+.home-label span,
+.home-label span::before,
+.home-label span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative;
+}
+.home-label span::before,
+.home-label span::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+    -moz-transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+    transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+}
+.home-label span {
+    -webkit-transition: all ease-out 250ms;
+    -moz-transition: all ease-out 250ms;
+    transition: all ease-out 250ms;
+}
+
+.home-label span::before,
+.home-label span::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+    -moz-transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+    transition: all cubic-bezier(0.4, 0, 1, 1) 400ms;
+}
+
+.home-label span::before {
+    bottom: 10px;
+}
+
+.home-label span::after {
+    top: 10px;
+}
+.homea:checked ~ .nvb .home-label span {
+    background: #01689b;
+}
+
+.homea:checked ~ .nvb .home-label span::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.homea:checked ~ .nvb .home-label span::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#homea:checked ~ #lst {
+    max-height: 285px;
+}
+#homea {
+    display: none;
+}
 .logo {
     margin-left: 45%;
 }
@@ -24,19 +93,26 @@ header{
     position: relative;
     height: 60px;
     margin-bottom: 350px;
-    /* min-width: 1200px; */
 }
 .main .navbar {
-    float: right;
-    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-right: 50px; */
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: -15px; */
+    /* max-width: 1200px; */
 }
-.main .home a {
+.main .home .firsta {
     color: white;
     line-height:32px;
     vertical-align:baseline;
     letter-spacing:0.48px;
     word-spacing:0px;
-    font-size: 26px;
+    font-size: 1.625rem;
     text-decoration: none;
     position: absolute;
     margin-top: 10px;
@@ -46,6 +122,14 @@ header{
     position: absolute;
     top: 185px;
     z-index: 0;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+.slide picture img {
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 picture{
     background-size: cover;
@@ -114,12 +198,11 @@ picture{
 
 .navbar li {
     display: inline-block;
-    
 }
 .navbar li a {
-    margin: 20px;
+    margin: 11px;
     color: white;
-    font-size: 19.2px;
+    font-size: 1.2rem;
     line-height:19.2px;
     vertical-align:baseline;
     letter-spacing:normal;
@@ -143,7 +226,7 @@ picture{
     
 }
 .flexdiv{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     margin-left: -20px;
     margin-right: 20px;
@@ -446,6 +529,9 @@ h3:hover{
         font-size: 18px;
         text-align: end;
         }
+    .navbar li{
+            visibility: hidden;
+        }    
   
 }
 @media screen and (min-width:480px) and (max-width:767px) {
@@ -582,6 +668,9 @@ h3:hover{
     .column h2{
             font-size: 27px;
             text-align: end;
+        }
+        .navbar li{
+            visibility: hidden;
         }
 }
 @media screen and (min-width:768px) and (max-width:991px){
@@ -786,5 +875,13 @@ h3:hover{
     }
     .lang li a {
         margin: 5px 10px 5px 0;
+    }
+    .home-label{
+        display: none;
+    }
+}
+@media (min-width:991px) {
+    .home-label{
+        display: none;
     }
 }
