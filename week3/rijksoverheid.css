@@ -76,7 +76,7 @@ body{
     top: 0;
 }
 
-#homea:checked ~ #lst {
+.homea:checked ~ .navbar {
     max-height: 285px;
 }
 #homea {
@@ -532,6 +532,56 @@ h3:hover{
     .navbar li{
             visibility: hidden;
         }    
+    #search .button {
+            position: absolute;
+            z-index: 2;
+            right: 25px;
+            top: 47px;
+            width: 90%;
+            
+        }
+    #search form.formbtn input[type=text] {
+            padding-left: 10px;
+            font-size: 1.025em;
+            margin: 0;
+            float: left;
+            width: 87.5%;
+            height: 48px;
+            background: #ffffff;
+        }
+    #search form.formbtn button {
+            width: 12.5%;
+            height: 48px;
+            background: #000000;
+            color: #ffffff;
+            font-size: 1.125em;
+            border-left: none;
+            cursor: pointer;
+            text-align: center;
+            font-family: "RO Sans", Calibri, sans-serif;
+        }
+    .main {
+            height: 102px;
+            margin-bottom: 350px;
+            margin-top: -12px;
+        }
+    .main .home .firsta {
+            margin-top: 10px;
+            margin-left: 50px;
+            font-size: 1.5rem;
+        }    
+    .logo img {
+        margin-top: -30px;
+    }     
+    .home-label {
+        height: 50%;
+    }
+    .bar .wrap {
+        top: 130px;
+        left: 55px;
+        padding: 10 30 20 20;
+        right: 25;
+    } 
   
 }
 @media screen and (min-width:480px) and (max-width:767px) {
@@ -669,9 +719,36 @@ h3:hover{
             font-size: 27px;
             text-align: end;
         }
-        .navbar li{
+    .navbar li{
             visibility: hidden;
         }
+    #search .button {
+            right: 25px;
+            top: 47px;
+            width: 90%;
+        }
+    .main {
+            height: 102px;
+            margin-bottom: 350px;
+            margin-top: -12px;
+        }
+    .main .home .firsta {
+            margin-top: 10px;
+            margin-left: 50px;
+            font-size: 1.5rem;
+        }    
+    .logo img {
+        margin-top: -30px;
+    }    
+    .home-label {
+        height: 50%;
+    }
+    .bar .wrap {
+        top: 130px;
+        left: 55px;
+        padding: 10 30 20 20;
+        right: 25;
+    }
 }
 @media screen and (min-width:768px) and (max-width:991px){
     .middle{
